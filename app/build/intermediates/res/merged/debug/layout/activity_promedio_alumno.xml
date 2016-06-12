@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PromedioAlumno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.66"
+            android:text="@string/carnet"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editText_alumnoCarnet"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:ems="10">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:onClick="cambiovalor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="330dp"
+        android:layout_height="28dp"
+        android:text="@string/Texto2"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="consultarPromedioPHP"
+            android:text="@string/Boton4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="consultarPromedioPHP"
+            android:text="@string/Boton5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="consultarPromedioPHP"
+            android:text="@string/Boton6" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_alumnoNota"
+        android:layout_width="330dp"
+        android:layout_height="47dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
